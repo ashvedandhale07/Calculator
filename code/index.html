@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1 class="header">Calculator</h1>
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" class="inputBox" id="result" required placeholder="Click on the numbers to select"></td>
+                <td><input type="button" class="clear" value="CLR" onclick="clearScreen()"></td>
+            </tr>
+            <tr>
+                <td class="digits"><input type="button" value="1" onclick="display('1')" onkeydown="keyboard()" ></td>
+                <td class="digits"><input type="button" value="2" onclick="display('2')" onkeydown="keyboard()"></td>
+                <td class="digits"><input type="button" value="3" onclick="display('3')" onkeydown="keyboard()"></td>
+                <td class="digits"><input type="button" value="+" onclick="display('+')" onkeydown="keyboard()"></td>
+            </tr>
+            <tr>
+                <td class="digits"><input type="button" value="4" onclick="display('4')" onkeydown="keyboard()"></td>
+                <td class="digits"><input type="button" value="5" onclick="display('5')" onkeydown="keyboard()"></td>
+                <td class="digits"><input type="button" value="6" onclick="display('6')" onkeydown="keyboard()"></td>
+                <td class="digits"><input type="button" value="-" onclick="display('-')" onkeydown="keyboard()"></td>
+            </tr>
+            <tr>
+                <td class="digits"><input type="button" value="7" onclick="display('7')" onkeydown="keyboard()"></td>
+                <td class="digits"><input type="button" value="8" onclick="display('8')" onkeydown="keyboard()"></td>
+                <td class="digits"><input type="button" value="9" onclick="display('9')" onkeydown="keyboard()"></td>
+                <td class="digits"><input type="button" value="*" onclick="display('*')" onkeydown="keyboard()"></td>
+            </tr>
+            <tr>
+                <td class="digits"><input type="button" value="." onclick="display('.')" onkeydown="keyborad()"></td>
+                <td class="digits"><input type="button" value="0" onclick="display('0')" onkeydown="keyboard()"></td>
+                <td class="digits"><input type="button" value="=" onclick="calculate()" onkeydown="keyboard()"></td>
+                <td class="digits"><input type="button" value="/" onclick="display('/')" onkeydown="keyboard()"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
